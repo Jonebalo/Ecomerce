@@ -1,13 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/icons/NBA Logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/icons/NBA Logo.png" />
     <title>Forma de Pago</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/icons/NBA Logo.png" alt="logo" width="50px" />
+      <h2>All-Star Stuff</h2>
+      <a href="carrito.html">Volver al carrito</a>
+      <a href="../HTML/finalizar pedido.html">Finalizar pedido</a>
+    </header>
+    <main>
+      <h1>Forma de pago</h1>
+      <div>
+        <h2>Mis tarjetas</h2>
+        <form>
+          <label for="tarjeta">
+            <input type="radio" name="tarjeta" id="tarjeta" value="6969" checked/>
+            Mastercard ...6969
+          </label>
+          <br />
+          <label for="tarjeta">
+            <input type="radio" name="tarjeta" id="tarjeta" value="2727" />
+            Mastercard ...2727
+          </label>
+          <br />
+          <label for="tarjeta">
+            <input type="radio" name="tarjeta" id="tarjeta" value="1984" />
+            Mastercard ...1984
+          </label>
+          <br />
+          <a href="finalizar pedido.html"> Efectuar el pago</a>
+        </form>
+      </div>
+      <hr />
+      <div>
+        <h2>Añadir nueva tarjeta</h2>
+        <form>
+          <input type="number" name="tarjeta" placeholder="Numero de tarjeta" />
+          <input type="text" name="titular" placeholder="Titular de la tarjeta"/>
+          <input type="date" name="caducidad" placeholder="Caducidad" />
+          <input type="number" name="cvv" placeholder="Codigo seguro" min="0" />
+          <button type="button">Añadir a mis tarjetas</button>
+          <label for="Borrar"></label>    
+          <input type="reset" value="Limpiar">
+        </form>
+      </div>
+    </main>
+    <section>
+        <div>
+            <img src="../assets/icons/Pago seguro.png" alt="PagoSeguro" width="50px"/>
+            <div>
+                <h5>Pago Seguro</h5>
+                <h6>100% Garantizado</h6>
+
+            </div>
+    </section>
+    <footer>
+        <div>
+            <img src="../assets/icons/GARANTIZADO.png" alt="logo" width="50" />
+            <h4>All-Star Stuff</h4>
+
+            <div>
+                <ul>
+                <li>Centro de Ayuda</li>
+                <li>Servicio al Consumidor</li>
+                <li>Escríbanos</li>
+                <li>Servicio Telefónico</li>
+                </ul>
+
+            </div>
+            <div>
+                <ul>
+                <li>Politica de Privacidad</li>
+                <li>Condiciones de Compra</li>
+                <li>Opiniones de Clientes</li>
+                <li>Aviso de Privacidad y Cookies</li>
+                </ul>
+
+            </div>
+        </div>
+        <div>
+
+            <h5>Unete a All-Star Stuff</h5>
+            <form>
+                <input type="email" name="Email" placeholder="Email"/>
+                <button type="submit">Suscribirme</button>
+                <label for="politica">
+                  <input type="checkbox" name="politica" id="politica" value="acepto"/>
+                  Acepto las politicas de privacidad
+                </label>
+            </form>
+            <h5>Siguenos en redes</h5>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../assets/icons/Logoinstagram.png" alt="logo" width="50"/>
+            </a>
+        
+                <a href="https://www.tiktok.com" target="_blank">
+                <img src="../assets/icons/logotiktok.jpg" alt="logo" width="50"/>
+            </a>
+        </div>
+        
+            
+
+
+
+    </footer>
+  </body>
 </html>
