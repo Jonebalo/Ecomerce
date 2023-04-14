@@ -16,16 +16,17 @@
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
       </head>
 <body>
-    <header>
-        <img src="../assets/icons/NBA Logo.png" alt="logo" width="100px" />
-        <h1>Productos</h1>
+    <header  >
+        <img src="../assets/icons/NBA Logo.png" alt="logo" width="100px" class="container"  />
+        <h1>Productos</h1> 
         <input type="search" name="buscador" />
         <button class="button">Buscar</button>
         <a href="carrito.html" class="button" id="comprar">Carrito<span>1</span></a>
-        <a href="index.html">Logout</a>
+        
       </header>
-      <nav>
-        <ul>
+
+      <nav id="navegacion">
+        <ul class=menu>
             
             <li><a href="">Sobre Nosotros</a></li>
             <li><a href="">Contacto</a></li>
@@ -33,13 +34,26 @@
             <li><a href="">Ofertas</a></li>
           
         </ul>
+
+        <ul class="menu">
+    
+        <a href="index.html">Logout</a>
+
+    </ul>
+
       </nav>
-    <main>
+   
+      <main  >
         <h2>Productos All-Star NBA</h2>
-        <div class="card">
-            <img src="../assets/images/Producto1.jpg" alt="Jordan" width="300px" />
+        <div class="card" >
+            <img src="../assets/images/Producto1.jpg" alt="Jordan" width="320px" />
+            
+            <div class="contenido-card">
             <h2>Camiseta Jordan All-Star 1996</h2>
             <p>320 <i class="bi bi-currency-euro"></i></p>
+
+            </div>
+            
             <div class="rating">
             <i class="bi bi-star-fill main-color"></i>
             <i class="bi bi-star-fill main-color"></i>
@@ -47,26 +61,32 @@
             <i class="bi bi-star-fill main-color"></i>
             <i class="bi bi-star-fill"></i>
             </div>
-            <button type="submit">Añadir al carrito</button>
-            <a href="detallesproducto.html"> Ver </a>
+
+            <button type="submit" class="button">Añadir al carrito</button>
+            <a href="detallesproducto.html" class="button"> Ver </a>
 
 
         </div>
         <div class="card">
-            <img src="../assets/images/producto2.jpg" alt="Kobe" width="300px" />
+            <img src="../assets/images/producto2.jpg" alt="Kobe" width="320px" />
+            
+            <div>
             <h2>Zapatillas Kobe Bryant All-Star</h2>
             <p>450 <i class="bi bi-currency-euro"></i></p>
             <button type="submit">Añadir al carrito</button>
             <a href="detallesproducto.html"> Ver </a>
+            </div>
 
 
         </div>
         <div class="card">
-            <img src="../assets/images/producto3.jpg" alt="" width="300px" />
+            <img src="../assets/images/producto3.jpg" alt="" width="320px" />
+            <div>
             <h2>Gorra All-Star Chicago</h2>
             <p>60 <i class="bi bi-currency-euro"></i></p>
             <button type="submit">Añadir al carrito</button>
             <a href="detallesproducto.html"> Ver </a>
+            </div>
 
 
 
@@ -74,18 +94,20 @@
 
 
     </main>
-    <section>
+    <section >
+       
         <div>
-            <img src="../assets/icons/Pago seguro.png" alt="PagoSeguro" width="50px"/>
+            <img src="../assets/icons/Pago seguro.png" alt="PagoSeguro" width="48px"/>
             <div>
                 <h5>Pago Seguro</h5>
                 <h6>100% Garantizado</h6>
 
             </div>
+
     </section>
-    <footer>
+    <footer >
         <div>
-            <img src="../assets/icons/GARANTIZADO.png" alt="logo" width="50" />
+            <img src="../assets/icons/GARANTIZADO.png" alt="logo" width="48px" />
             <h4>All-Star Stuff</h4>
 
             <div>
@@ -120,12 +142,12 @@
             </form>
             <h5>Siguenos en redes</h5>
 
-            <a href ="https://www.instagram.com" target="_blank">
-            <img src="../assets/icons/Logoinstagram.png" alt="logo" width="50"/>
+            <a href ="https://www.instagram.com" target="_blank"> 
+            <img src="../assets/icons/Logoinstagram.png" alt="logo" width="48"/>
         </a>
     
             <a href="https://www.tiktok.com" target="_blank">
-            <img src="../assets/icons/logotiktok.jpg" alt="logo" width="50"/>
+            <img src="../assets/icons/logotiktok.jpg" alt="logo" width="48"/>
         </a>
         </div>
 

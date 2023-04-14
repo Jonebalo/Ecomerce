@@ -1,7 +1,9 @@
-html {
+body {
     color: #222;
     font-family: 'IBM Plex Mono', monospace;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 16px;
 }
 
 p {margin-bottom: 1rem;}
@@ -29,17 +31,44 @@ h5, .h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
-a,
-.main-color
- {
-    color: #8a2be2;
-}
+
 
 /*Buttons*/
 
 .button{
 
     display: inline-block;
+    padding: 40;
+    text-decoration: none;
+}
+.rating{
+
+    color: #ccc;
+}
+
+.button{
+
+    display: inline-block;
+}
+
+.space{
+    padding: 48px;
+}
+
+.rating i{
+    margin-right: 16px;
+
+}
+
+.card div{
+    padding: 48px;
+}
+
+.contenido-card h2,
+.contenido-card p, 
+.contenido-card .button, 
+.contenido-card .rating  {
+    margin-bottom: 16px;
 }
 
 /*Header*/
@@ -54,9 +83,7 @@ a,
     right: 0;
 }
 
-
-/*Cards*/
-
+ 
 .rating{
 
     color: #ccc;
@@ -65,4 +92,43 @@ a,
 .button{
 
     display: inline-block;
+}
+
+.space{
+    padding: 48px;
+}
+
+.rating i{
+    margin-right: 16px;
+
+}
+
+.card div{
+    padding: 48px;
+}
+
+.contenido-card h2,
+.contenido-card p, 
+.contenido-card .button, 
+.contenido-card .rating  {
+    margin-bottom: 16px;
+}
+
+/*Pagina productos*/
+
+main .card{
+    width: 25%
+}
+
+/*Helper*/
+
+.container{
+    max-width: 480;
+    margin 0 auto;
+}
+
+a,
+.main-color
+ {
+    color: #8a2be2;
 }
