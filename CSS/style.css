@@ -1,10 +1,34 @@
-body {
-    color: #222;
-    font-family: 'IBM Plex Mono', monospace;
+
+:root{
+    --hue: 270;
+    --principal: hsl(var(--hue) 91% 50% / 1);
+    --secundario: hsl(var(--hue) 71% 70% / 1);
+    --resalto: hsl(190 71% 70% / 1);
+    --negro: hsl(var(--hue) 21% 20% / 1);
+    --blanco: hsl(var(--hue) 21% 98% / 1);
+    --gris: hsl(var(--hue) 21% 80% / 1);
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+body{
+    color: var(--negro);
+    background-color: var(--blanco);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-size: 16px;
 }
+
+img{
+    max-width: 100%;
+}
+
+
+
+/* Tipografia */
 
 p {margin-bottom: 1rem;}
 
@@ -12,6 +36,7 @@ p {margin-bottom: 1rem;}
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   line-height: 1.3;
+  color: var(--negro);
 }
 
 h1, .h1 {
@@ -25,86 +50,149 @@ h3, .h3 {font-size: 1.953rem;}
 
 h4, .h4 {font-size: 1.563rem;}
 
-h5, .h5 {font-size: 1.25rem;}
+h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
+a{
+    color: var(--principal);
+}
 
 
-/*Buttons*/
+
+/* Buttons */
 
 .button{
     display: inline-block;
     text-decoration: none;
+    padding: 16px 24px;
+    border: 2px solid var(--principal);
+    border-radius: 8px;
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: var(--blanco);
+    background: var(--principal);
+    text-align: center;
+    cursor: pointer;
 }
 
-    color: #ccc;
+.button-secundario{
+    background: var(--secundario);
+    border-color: var(--secundario);
 }
 
-.button{
+/* Menu */
 
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
     display: inline-block;
 }
 
-.space{
-    padding: 48px;
+/* Cards */
+
+.orden-card{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-center;
+    gap: 16px;
+
 }
 
-.rating i{
-    margin-right: 16px;
-
+.card{
+    width: 100%;
+    border: 4px solid var(--gris);
+    border-radius: 16px;
+    overflow: hidden;
+    
+}
+.contenido-producto{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.card div{
-    padding: 48px;
+.card-titulo,
+.card-titulo .precio,
+.card-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-/*Header*/
-
-#comprar {
-    position: relative;
+.card h4{
+    margin: 0;
 }
 
 .rating{
+    color: var(--gris);
+}
+
+.card-actions{
+    gap: 16px;
+}
+
+.card-actions .anadir{
+    width: 100%;
+}
+
+/* Header */
+
+header {
+background-color: var(--secundario);
 
 }
 
-.button{
+#comprar{
+    position: relative;
+}
 
+#comprar span{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    background: var(--negro);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nav */
+
+#navegacion .col-izq,
+#navegacion .col-dch{
+    width: 49%;
     display: inline-block;
 }
 
-.space{
-    padding: 48px;
+#navegacion .col-dch .menu{
+    text-align: right;
 }
 
-.rating i{
-    margin-right: 16px;
+/* Página productos */
 
-}
-
-.card div{
-    padding: 48px;
-}
-
-.contenido-card h2,
-.contenido-card p, 
-.contenido-card .button, 
-.contenido-card .rating  {
-    margin-bottom: 16px;
+.espacio-card{
+    display: flex;
+    gap: 16px;
 }
 
 
-/*Helper*/
+/* Helper */
 
 .container{
-    max-width: 480;
-    margin 0 auto;
+    max-width: 992px;
+    margin: 0px auto;
+    padding: 16px;
 }
 
-a,
-.main-color
- {
-    color: #8a2be2;
+.main-color{
+    color: var(--principal);
 }

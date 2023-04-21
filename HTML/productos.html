@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,45 +14,55 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
-      </head>
+</head>
 <body>
-    <header  >
-        <img src="../assets/icons/NBA Logo.png" alt="logo" width="100px" class="container"  />
-        <h1>Productos</h1> 
-        <input type="search" name="buscador" />
-        <button class="button">Buscar</button>
-        <a href="carrito.html" class="button" id="comprar">Carrito<span>1</span></a>
+    <header>
         
-      </header>
-
-      <nav id="navegacion">
-        <ul class=menu>
-            
-            <li><a href="">Sobre Nosotros</a></li>
-            <li><a href="">Contacto</a></li>
-            <li><a href="">Gadgets</a></li>
-            <li><a href="">Ofertas</a></li>
-          
-        </ul>
-
-        <ul class="menu">
+        <div class="container">
+        <img src="../assets/icons/NBA Logo.png" alt="logo" width="96px"/>
+        <h1>All Stars Stuff</h1> 
+        <input type="search" name="buscador" placeholder="¿Que buscas?" />
+        <button class="button">Buscar</button>
+        <a href="carrito.html" class="button" id="comprar">Carrito<span>1</span>
+        </a>
+    </div>
     
-        <a href="index.html">Logout</a>
+    </header>
 
-    </ul>
+    <nav class="container" id="navegacion">
+        <section></section>
+        <div class="col-izq">
+            <ul class=menu>
 
-      </nav>
-   
-      <main  >
-        <h2>Productos All-Star NBA</h2>
-        <div class="card" >
-            <img src="../assets/images/Producto1.jpg" alt="Jordan" width="320px" />
+                <li><a href="productos.html">Todos los productos</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Gadgets</a></li>
+                <li><a href="">Ofertas</a></li>
+          
+            </ul>
+        </div>
+
+        <div class="col-dch">
+            <ul class="menu">
+               <li><a href="index.html">Logout</a></li>
+               <li><a href="carrito.html">Mi pedido</a></li>
             
-            <div class="contenido-card">
+            </ul>
+        </div>
+    </nav>
+   
+    <main class="container">
+        
+        <h2>Productos All-Star NBA</h2>
+        
+    <div class="orden-card">
+        
+        <div class="card">
+            <img src="../assets/images/Producto1.jpg" alt="Jordan" width="320px"/>
+            <div class="contenido-producto">
             <h2>Camiseta Jordan All-Star 1996</h2>
-            <p>320 <i class="bi bi-currency-euro"></i></p>
-
-            </div>
+            <p>320 <i class="bi bi-currency-euro"></i></p></div>
             
             <div class="rating">
             <i class="bi bi-star-fill main-color"></i>
@@ -61,54 +71,87 @@
             <i class="bi bi-star-fill main-color"></i>
             <i class="bi bi-star-fill"></i>
             </div>
+            <div class="card-actions">
 
-            <button type="submit" class="button">Añadir al carrito</button>
-            <a href="detallesproducto.html" class="button"> Ver </a>
-
-
+                <button type="submit" class="button anadir">Añadir al carrito</button>
+                <a href="detallesproducto.html" class="button button-secundario"> Ver </a>
+            </div>
         </div>
-        <div class="card">
-            <img src="../assets/images/producto2.jpg" alt="Kobe" width="320px" />
             
-            <div>
-            <h2>Zapatillas Kobe Bryant All-Star</h2>
-            <p>450 <i class="bi bi-currency-euro"></i></p>
-            <button type="submit">Añadir al carrito</button>
-            <a href="detallesproducto.html"> Ver </a>
-            </div>
+                <div class="card">
+                <img src="../assets/images/producto2.jpg" alt="Kobe" width="320px" />
+            
+                <div class="contenido-producto">
+                <h4>Zapatillas Kobe Bryant All-Star</h4>
+                <div>450 <i class="bi bi-currency-euro"></i></div>
+                <div class="rating">
+            
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>  
+                
+                <div class="card-actions">
 
-
+                    <button type="submit" class="button">Añadir al carrito</button>
+                    <a href="detallesproducto.html" class="button button-secundario"> Ver </a>
+        
+                </div>
+                </div>
         </div>
+        
         <div class="card">
-            <img src="../assets/images/producto3.jpg" alt="" width="320px" />
-            <div>
-            <h2>Gorra All-Star Chicago</h2>
-            <p>60 <i class="bi bi-currency-euro"></i></p>
-            <button type="submit">Añadir al carrito</button>
-            <a href="detallesproducto.html"> Ver </a>
+            <img src="../assets/images/producto3.jpg" alt="Gorra" width="320px" />
+            
+                <div class="contenido-producto">
+                <h4>Gorra All-Star Chicago</h4>
+                <div class="precio">60 <i class="bi bi-currency-euro"></i></div>
+
+                <div class="rating">
+            
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill main-color"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>  
+                
+                <div class="card-actions">
+
+                    <button type="submit" class="button anadir">Añadir al carrito</button>
+                    <a href="detallesproducto.html" class="button button-secundario"> Ver </a>
+        
+                </div>
             </div>
-
-
-
         </div>
-
-
+    </div>
     </main>
-    <section >
-       
+    <section class="container testimonios">
+        
+        <h4>Testimonios de clientes</h4>
+        
+        <div>
+          <p>La camiseta es de una calidad excepcional, el precio magnifico;practicamente regalado, es muy comoda al tacto y ayer me la puse para jugar con mi hijo de 10 años y me falto pisarle el cuello, el envio fue muy rapido y el producto llego en perfectas condiciones </p>
+          
+        </div>
+    </section>
+    
+    <section class="container benefits">
         <div>
             <img src="../assets/icons/Pago seguro.png" alt="PagoSeguro" width="48px"/>
+            
             <div>
                 <h5>Pago Seguro</h5>
-                <h6>100% Garantizado</h6>
-
+                <h5><span>100% Garantizado</span></h5>
             </div>
-
+        </div>
     </section>
-    <footer >
+<footer class="container">
         <div>
             <img src="../assets/icons/GARANTIZADO.png" alt="logo" width="48px" />
-            <h4>All-Star Stuff</h4>
+            <h4>All-Star Stuff</h4> 
 
             <div>
                 <ul class="menu">
@@ -125,9 +168,8 @@
                 <li>Condiciones de Compra</li>
                 <li>Opiniones de Clientes</li>
                 <li>Aviso de Privacidad y Cookies</li>
-                </ul>
-
-            </div>
+                </ul> 
+             </div>
         </div>
         <div>
 
@@ -142,14 +184,14 @@
             </form>
             <h5>Siguenos en redes</h5>
 
-            <a href ="https://www.instagram.com" target="_blank"> 
+            <a href ="https://www.instagram.com" target="_blank">
             <img src="../assets/icons/Logoinstagram.png" alt="logo" width="48"/>
-        </a>
+    
     
             <a href="https://www.tiktok.com" target="_blank">
             <img src="../assets/icons/logotiktok.jpg" alt="logo" width="48"/>
-        </a>
+    
         </div>
-    </footer>
+</footer>
 </body>
 </html>
