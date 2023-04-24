@@ -3,10 +3,11 @@
     --hue: 270;
     --principal: hsl(var(--hue) 91% 50% / 1);
     --secundario: hsl(var(--hue) 71% 70% / 1);
-    --resalto: hsl(190 71% 70% / 1);
+    --resalto: hsl(47, 73%, 56%);
     --negro: hsl(var(--hue) 21% 20% / 1);
     --blanco: hsl(var(--hue) 21% 98% / 1);
     --gris: hsl(var(--hue) 21% 80% / 1);
+    --blpuro: hsl(0, 0%, 100%);
 }
 
 * {
@@ -59,7 +60,6 @@ a{
 }
 
 
-
 /* Buttons */
 
 .button{
@@ -68,12 +68,17 @@ a{
     padding: 16px 24px;
     border: 2px solid var(--principal);
     border-radius: 8px;
-    font-family: "Outfit", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     color: var(--blanco);
     background: var(--principal);
     text-align: center;
     cursor: pointer;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: var(--principal);
 }
 
 .button-secundario{
@@ -144,7 +149,7 @@ a{
 /* Header */
 
 header {
-background-color: var(--secundario);
+background-color: var(--blanco);
 
 }
 
@@ -164,6 +169,26 @@ background-color: var(--secundario);
     justify-content: center;
     align-items: center;
 }
+ 
+.container{
+    background-color: var(--blpuro);
+
+}
+
+/*.container div{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}*/
+ header .search{
+
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+   
+    gap: 8px;
+}
+ 
 
 /* Nav */
 
@@ -176,6 +201,7 @@ background-color: var(--secundario);
 #navegacion .col-dch .menu{
     text-align: right;
 }
+
 
 /* Página productos */
 

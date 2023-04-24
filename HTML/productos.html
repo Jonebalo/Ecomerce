@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="/assets/icons/NBA Logo.png">
+        <link rel="shortcut icon" href="../assets/icons/NBA Logo.ico">
         <title>All Stars Stuff</title>
         <!-- Mi estilo -->
         <link rel="stylesheet" href="../CSS/style.css">
@@ -18,14 +18,19 @@
 <body>
     <header>
         
-        <div class="container">
-        <img src="../assets/icons/NBA Logo.png" alt="logo" width="96px"/>
-        <h1>All Stars Stuff</h1> 
-        <input type="search" name="buscador" placeholder="¿Que buscas?" />
-        <button class="button">Buscar</button>
-        <a href="carrito.html" class="button" id="comprar">Carrito<span>1</span>
-        </a>
-    </div>
+    <div class="container search">
+        
+        <div><a href="index.html" class="logo"></a>
+            <img src="../assets/icons/NBA Logo.png" alt="logo" />
+            <h1>All Stars Stuff</h1>    
+                <input type="search" name="buscador" placeholder="¿Que buscas?:"/>
+                <button class="button">Buscar</button>
+                <a href="carrito.html" class="button" id="comprar">Carrito<span>1</span></a>
+            </div>
+        </div> <!--DIV MARCA-->
+        
+    
+    </div> <!--CONTAINER-->
     
     </header>
 
@@ -59,26 +64,53 @@
     <div class="orden-card">
         
         <div class="card">
-            <img src="../assets/images/Producto1.jpg" alt="Jordan" width="320px"/>
+            <img src="../assets/images/producto2.jpg" alt="Kobe" width="320px" />
+        
             <div class="contenido-producto">
-            <h2>Camiseta Jordan All-Star 1996</h2>
-            <p>320 <i class="bi bi-currency-euro"></i></p></div>
+            <h4>Zapatillas Kobe Bryant All-Star</h4>
+            <div>450 <i class="bi bi-currency-euro"></i></div>
             
             <div class="rating">
+                <i class="bi bi-star-fill main-color"></i>
+                <i class="bi bi-star-fill main-color"></i>
+                <i class="bi bi-star-fill main-color"></i>
+                <i class="bi bi-star-fill main-color"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>  
+            
+            <div class="card-actions">
+
+                <button type="submit" class="button">Añadir al carrito</button>
+                <a href="detallesproducto.html" class="button button-secundario"> Ver </a>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../assets/images/producto2.jpg" alt="Kobe" width="320px" />
+    
+        <div class="contenido-producto">
+        <h4>Zapatillas Kobe Bryant All-Star</h4>
+        <div>450 <i class="bi bi-currency-euro"></i></div>
+        
+        <div class="rating">
             <i class="bi bi-star-fill main-color"></i>
             <i class="bi bi-star-fill main-color"></i>
             <i class="bi bi-star-fill main-color"></i>
             <i class="bi bi-star-fill main-color"></i>
             <i class="bi bi-star-fill"></i>
-            </div>
-            <div class="card-actions">
+        </div>  
+        
+        <div class="card-actions">
 
-                <button type="submit" class="button anadir">Añadir al carrito</button>
-                <a href="detallesproducto.html" class="button button-secundario"> Ver </a>
-            </div>
+            <button type="submit" class="button">Añadir al carrito</button>
+            <a href="detallesproducto.html" class="button button-secundario"> Ver </a>
+
         </div>
-            
-                <div class="card">
+        </div>
+</div>
+<div class="card">
                 <img src="../assets/images/producto2.jpg" alt="Kobe" width="320px" />
             
                 <div class="contenido-producto">
@@ -101,32 +133,6 @@
                 </div>
                 </div>
         </div>
-        
-        <div class="card">
-            <img src="../assets/images/producto3.jpg" alt="Gorra" width="320px" />
-            
-                <div class="contenido-producto">
-                <h4>Gorra All-Star Chicago</h4>
-                <div class="precio">60 <i class="bi bi-currency-euro"></i></div>
-
-                <div class="rating">
-            
-                    <i class="bi bi-star-fill main-color"></i>
-                    <i class="bi bi-star-fill main-color"></i>
-                    <i class="bi bi-star-fill main-color"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                </div>  
-                
-                <div class="card-actions">
-
-                    <button type="submit" class="button anadir">Añadir al carrito</button>
-                    <a href="detallesproducto.html" class="button button-secundario"> Ver </a>
-        
-                </div>
-            </div>
-        </div>
-    </div>
     </main>
     <section class="container testimonios">
         
